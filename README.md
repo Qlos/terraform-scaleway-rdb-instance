@@ -5,7 +5,7 @@ This project is **100% Open Source**, build and develop by DevOps Team from [Qlo
 
 ## About
 
-Terraform module to create [Amazon Client VPN](https://aws.amazon.com/vpn/client-vpn/). AWS Client VPN allows to create secure connection to AWS or on-premises resources.
+Terraform module to create [Scaleway Managed Database](https://www.scaleway.com/en/database/). Scaleway Managed Database allows to create managed database for PostgreSQL and MySQL
 
 ## License
 
