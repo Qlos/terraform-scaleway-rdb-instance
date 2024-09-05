@@ -15,11 +15,11 @@ resource "scaleway_rdb_instance" "this" {
     volume_type          = var.volume_type
     volume_size_in_gb    = var.volume_size_in_gb
     project_id           = var.project_id
-    # private_network      = {
-    #   pn_id       = var.pn_id
-    #   ip_net      = var.ip_net
-    #   enable_ipam = var.enable_ipam
-    # }
-    tags        = merge({ "Name" = var.name }, var.tags)
+    private_network {
+      pn_id       = var.pn_id
+      ip_net      = var.ip_net
+      enable_ipam = var.enable_ipam
+    }
+    tags        = var.tags
 
 }

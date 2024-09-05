@@ -94,7 +94,7 @@ variable "enable_ipam" {
   description = "(Optional) if true, the IP network address within the private subnet is determined by the IPAM service"
 }
 variable "tags" {
-  type = string
-  default = null
-  description = ""
+  type        = list(string)
+  description = "Tags associated with the instance"
+  default     = []
 }
